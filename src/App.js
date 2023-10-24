@@ -3,23 +3,34 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 style={heading}>Hello</h1>
+      <p>logo</p>
+      <Profile />
+    </>
   );
 }
 
 export default App;
+
+// simple function components
+export function Profile(){
+
+  return(
+    <img 
+      style={image}
+      src='https://eduport.webestica.com/assets/images/courses/4by3/07.jpg' />
+  );
+}
+
+// object style
+const image = {
+  width: 200,
+  display: 'block',
+  margin: 'auto',
+}
+const heading = {
+  textAlign: 'center'
+}
+
+
